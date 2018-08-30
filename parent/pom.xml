@@ -66,6 +66,8 @@
     <modules>
         <module>bubble</module>
         <module>sortinterface</module>
+        <module>quick</module>
+        <module>quick</module>
     </modules>
 
 
