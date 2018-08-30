@@ -1,4 +1,4 @@
-import mic.java9.by.example.BubbleSort;
+import mic.java9.by.example.ch3.BubbleSort;
 import mic.java9.by.example.ch3.Sort;
 import mic.java9.by.example.ch3.SortableCollection;
 import mic.java9.by.example.ch3.Swapper;

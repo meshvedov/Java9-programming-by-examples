@@ -1,4 +1,4 @@
-package mic.java9.by.example;
+package mic.java9.by.example.ch3;
 
 import mic.java9.by.example.ch3.Sort;
 import mic.java9.by.example.ch3.SortableCollection;

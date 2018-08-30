@@ -9,27 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>quick</artifactId>
+    <artifactId>sortsupportclasses</artifactId>
     <dependencies>
-        <dependency>
-            <groupId>mic.java9.by.example</groupId>
-            <artifactId>sortinterface</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-        </dependency>
         <dependency>
             <groupId>mic.java9.by.example</groupId>
             <artifactId>sortinterface</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>mic.java9.by.example</groupId>
-            <artifactId>sortsupportclasses</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 

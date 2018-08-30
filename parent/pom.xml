@@ -68,6 +68,7 @@
         <module>sortinterface</module>
         <module>quick</module>
         <module>quick</module>
+        <module>sortsupportclasses</module>
     </modules>
 
 
