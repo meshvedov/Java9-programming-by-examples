@@ -1,4 +1,4 @@
-package qsort.mic.java9.by.example.ch3;
+package mic.java9.by.example.ch3.qsort;
 
 import mic.java9.by.example.ch3.SortableCollection;
 import mic.java9.by.example.ch3.Swapper;

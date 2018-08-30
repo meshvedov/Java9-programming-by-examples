@@ -5,7 +5,7 @@ import mic.java9.by.example.ch03.support.ArrayWrapper;
 import mic.java9.by.example.ch3.Swapper;
 import org.junit.Assert;
 import org.junit.Test;
-import qsort.mic.java9.by.example.ch3.Partitioner;
+import mic.java9.by.example.ch3.qsort.Partitioner;
 
 public class PartitionerTest {
     @Test
