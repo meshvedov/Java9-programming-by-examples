@@ -25,7 +25,7 @@ public class Row {
         this.matchedPositions = matchedPositions;
     }
 
-    public boolean guessMathces(Color[] guess) {
+    public boolean guessMatches(Color[] guess) {
         return nrMatchingColors(guess) == matchedColors && nrMatchingPositions(guess) == matchedPositions;
     }
 

@@ -40,4 +40,29 @@ public abstract class Guesser {
             return none;
         }
     }
+
+    private boolean guessMatch(Color[] guess) {
+        for (Row row : table.rows) {
+            if (!row.guessMatches(guess)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean guessDoesNotMatch(Color[] guess) {
+        return !guessMatch(guess);
+    }
+
+    public Row guess() {
+        Color[] guess = nextGuess();
+        while (guess != none && guessDoesNotMatch(guess)) {
+            guess = nextGuess();
+        }
+        if (guess == none) {
+            return Row.none;
+        } else {
+            return new Row(guess);
+        }
+    }
 }
