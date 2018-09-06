@@ -5,6 +5,14 @@
  * For more details take a look at the Java Quickstart chapter in the Gradle
  * user guide available at https://docs.gradle.org/4.10/userguide/tutorial_java_projects.html
  */
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'me.champeau.gradle:jmh-gradle-plugin:0.2.0'
+    }
+}
 
 plugins {
     // Apply the java plugin to add support for Java
@@ -20,7 +28,9 @@ mainClassName = 'App'
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
     compile 'com.google.guava:guava:23.0'
-
+    compile 'org.slf4j:slf4j-api:1.7.25'
+    compile 'org.slf4j:slf4j-api:1.7.7'
+    compile 'ch.qos.logback:logback-classic:1.0.11'
     // Use JUnit test framework
     testCompile 'junit:junit:4.12'
 }
@@ -30,4 +40,11 @@ repositories {
     // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+}
+
+apply plugin: "me.champeau.gradle.jmh"
+
+jmh {
+    jmhVersion = '1.13'
+    includeTests = true
 }
